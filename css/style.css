@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+
+    background: #312331;
+    color:aliceblue;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --text:calc(1vw + 1vh);
+}
+
+.calc{
+    width: 28vw;
+    height: 60vh;
+
+    display: block;
+}
+
+.result{
+    width: 78%;
+    height: 8vh;
+
+    text-align: center;
+    font-size: calc(var(--text) * 1.6);
+
+    background-color: #241924;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.calc__button{
+    background-color: #312331;
+    border: 2px solid #241924;
+    color: whitesmoke;
+    transition: .1s;
+}
+.calc__button:hover{
+    background: #241924;
+}
+
+.buttons{
+    width: 99%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+.div1 { grid-area: 3 / 1 / 4 / 2; }
+.div2 { grid-area: 3 / 2 / 4 / 3; }
+.div3 { grid-area: 3 / 3 / 4 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 1 / 1 / 2 / 2; }
+.div8 { grid-area: 1 / 2 / 2 / 3; }
+.div9 { grid-area: 1 / 3 / 2 / 4; }
+.div10 { grid-area: 4 / 1 / 5 / 5;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+       }
+.div11 { grid-area: 1 / 4 / 2 / 5; }
+.div12 { grid-area: 2 / 4 / 3 / 5; }
+.div13 { grid-area: 3 / 4 / 4 / 5; } 
+
+
+
+.history{
+    display:block;
+}
